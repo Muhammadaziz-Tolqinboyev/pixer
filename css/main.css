@@ -10,7 +10,7 @@ body {
 
 img {
 	display: block;
-	height: auto;
+	/* height: auto; I hide this part in comment because some images not required this code */
 }
 
 .container {
@@ -72,6 +72,7 @@ img {
 }
 
 .navbar-link:active {
+	color: #fff;
 	background-color: #191919b3;
 	border-bottom: 3px solid transparent;
 }
@@ -140,11 +141,11 @@ img {
 }
 
 .hero-link:hover {
-	background-color: #00bafccc;
+	opacity: .8;
 }
 
 .hero-link:active {
-	background-color: #00bafc99;
+	opacity: .6;
 }
 
 .services {
@@ -179,6 +180,9 @@ img {
 }
 
 .service-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 320px;
 	padding: 24px;
 	border-radius: 5px;
@@ -193,6 +197,20 @@ img {
 	box-shadow: 0px 4px 4px 0px #00000033;
 }
 
+.service-item-pic {
+	margin-block-end: 16px;
+}
+
+.service-item-title {
+	margin-block: 0 16px;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.service-item-desc {
+	margin-block: 0;
+	line-height: 24px;
+}
 .service-link-list {
 	display: flex;
 	justify-content: center;
@@ -209,15 +227,15 @@ img {
 	border-radius: 5px;
 	line-height: 24px;
 	text-decoration-line: none;
-	transition: background-color .3s linear;
+	transition: opacity .3s linear;
 }
 
 .service-order-link:hover {
-	background-color: #00bafccc;
+	opacity: .8;
 }
 
 .service-order-link:active {
-	background-color: #00bafc99;
+	opacity: .6;
 }
 
 .service-link {
@@ -266,6 +284,7 @@ img {
 .work-item {
 	display: flex;
 	align-items: center;
+	width: 832px;
 }
 
 .work-item:nth-child(2n) {
@@ -285,6 +304,16 @@ img {
 	width: 493px;
 }
 
+.work-item-title {
+	margin-block: 0 8px;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.work-item-desc {
+	margin-block: 0;
+	line-height: 24px;
+}
 .work-link-wrapper {
 	width: 167px;
 	margin-inline: auto;
@@ -299,15 +328,15 @@ img {
 	border-radius: 5px;
 	line-height: 24px;
 	text-decoration: none;
-	transition: background-color .3s linear;
+	transition: opacity .3s linear;
 }
 
 .work-link:hover {
-	background-color: #00bafccc;
+	opacity: .8;
 }
 
 .work-link:active {
-	background-color: #00bafc99;
+	opacity: .6;
 }
 
 .site-footer {
@@ -370,3 +399,91 @@ img {
 .footer-item-pic {
 	margin-right: 8px;
 }
+/* Hero Service section style start */
+.hero-service {
+	padding-block: 72px 80px;
+	background-color: #f4f4f4;
+}
+
+.hero-service-wrapper {
+	background-color: #fff;
+}
+
+.hero-service-inner {
+	width: 800px;
+	margin-inline: auto;
+	margin-block-end: 152px;
+	text-align: center;
+}
+
+.hero-service-title {
+	margin-block: 0 16px;
+	font-size: 40px;
+	line-height: 52px;
+}
+
+.hero-service-desc {
+	margin-block: 0;
+	line-height: 24px;
+}
+
+.hero-service-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 64px;
+}
+
+.hero-service-item {
+	display: flex;
+	width: 804px;
+	padding: 32px;
+	border-radius: 5px;
+	box-shadow: 0px 10px 16px 0px #0000001f;
+	transition: box-shadow 0.3s linear;
+}
+
+.hero-service-item:hover {
+	box-shadow: 0px 12px 21px 0px #0000001a;
+}
+
+.hero-service-item:active {
+	box-shadow: 0px 4px 4px 0px #00000033;
+}
+
+.hero-service-pic {
+	margin-inline-end: 40px;
+}
+
+.hero-service-item-inner {
+	width: 500px;
+}
+
+.hero-service-heading {
+	margin-block: 0 16px;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.hero-service-paragraph {
+	margin-block: 0 16px;
+	line-height: 24px;
+}
+
+.hero-service-inner-item {
+	margin-block-end: 8px;
+	margin-left: 18px;
+	line-height: 24px;
+	list-style: url("../images/rectangle.svg");
+}
+
+.hero-service-inner-item:last-child {
+	margin-block-end: 16px;
+}
+
+.hero-service-link-list {
+	display: flex;
+	align-items: center;
+}
+
+/* Hero Service section style finish */
