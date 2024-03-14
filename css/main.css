@@ -399,13 +399,16 @@ img {
 .footer-item-pic {
 	margin-right: 8px;
 }
+
 /* Hero Service section style start */
 .hero-service {
-	padding-block: 72px 80px;
+	padding-block: 0 80px;
 	background-color: #f4f4f4;
 }
 
 .hero-service-wrapper {
+	margin-block-end: 80px;
+	padding-block: 72px;
 	background-color: #fff;
 }
 
@@ -438,6 +441,7 @@ img {
 	display: flex;
 	width: 804px;
 	padding: 32px;
+	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0px 10px 16px 0px #0000001f;
 	transition: box-shadow 0.3s linear;
